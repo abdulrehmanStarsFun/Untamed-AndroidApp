@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Uhunt"
+        tools:targetApi="31">
+        <activity
+            android:name=".jet.Setting_Screen"
+            android:exported="false"
+            android:label="@string/title_activity_setting_screen"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.Uploadvideo_detail"
+            android:exported="false"
+            android:label="@string/title_activity_uploadvideo_detail"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.Chat_elements"
+            android:exported="false"
+            android:label="@string/title_activity_chat_elements"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.Chat"
+            android:exported="false"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.pro"
+            android:exported="false"
+            android:label="@string/title_activity_pro"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.ScreenTest"
+            android:exported="false"
+            android:label="@string/title_activity_screen_test"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.Testing_Screen"
+            android:exported="false"
+            android:label="@string/title_activity_testing_screen"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.VideoProfileScreen"
+            android:exported="false"
+            android:label="@string/title_activity_videoprofilescreen"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".editext_comp"
+            android:exported="false"
+            android:label="@string/title_activity_editext_comp"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".button_comp"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".landingActivities.signupActivity.SignupActivity"
+            android:exported="false"
+            android:label="@string/title_activity_button_comp"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".text_comp"
+            android:exported="false"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.user_profile"
+            android:exported="false"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.createscrean"
+            android:exported="false"
+            android:label="@string/title_activity_createscrean"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.bot"
+            android:exported="false"
+            android:label="@string/title_activity_bot"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.massenger"
+            android:exported="false"
+            android:label="@string/title_activity_massenger"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".ui.activities.landing.menu3"
+            android:exported="false"
+            android:label="@string/title_activity_menu3"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".ui.activities.landing.menu2"
+            android:exported="false"
+            android:label="@string/title_activity_menu2"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.faltu"
+            android:exported="false"
+            android:label="@string/title_activity_faltu"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".ui.activities.landing.menu"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".jet.signup_page"
+            android:exported="false"
+            android:label="@string/title_activity_signup_page"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".ui.activities.landing.JetpackLog"
+            android:exported="false"
+            android:label="@string/title_activity_jetpack_log"
+            android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".Clips"
+            android:exported="false" />
+        <activity
+            android:name=".jet.jetlog"
+            android:exported="false" />
+        <activity
+            android:name=".jet.profiledetail"
+            android:exported="false" />
+        <activity
+            android:name=".jet.resetpass"
+            android:exported="false" />
+        <activity
+            android:name=".jet.resetpass_mail_number"
+            android:exported="false" />
+        <activity
+            android:name=".jet.video_profile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.interestpopup"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.NotificationPopup"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.profile2"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.profile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.passpopup"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.newpass"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.logcode"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.resetpass"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.Loginwithcode"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.Signinsocial"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.Emaillogin"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.landing.Login"
+            android:exported="false" />
+        <activity
+            android:name=".landingActivities.profile.FillProfileActviity"
+            android:exported="false" />
+        <activity
+            android:name=".landingActivities.otp.OtpActviity"
+            android:exported="false" />
+        <activity
+            android:name=".landingActivities.tvActivities.TvActviity"
+            android:exported="false" />
+        <activity
+            android:name=".landingActivities.tikTok.TiktokActivity"
+            android:exported="false" />
+
+            <activity
+                android:name=".landingActivities.homePlaytube.MainPlayTubeActviity"
+                android:exported="true"
+                android:label="@string/app_name"
+                android:theme="@style/Theme.Uhunt" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true"
+            android:label="@string/title_activity_button_comp"
+            android:theme="@style/Theme.Uhunt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,129 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.example.uhunt'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.uhunt"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.2.0'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation "androidx.compose.ui:ui:$compose_ui_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
+    implementation 'androidx.compose.material:material:1.3.1'
+    implementation 'com.google.firebase:protolite-well-known-types:18.0.0'
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.5.3'
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.core:core-ktx:+'
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'com.airbnb.android:lottie-compose:4.2.0'
+    implementation "androidx.navigation:navigation-compose:2.6.0-alpha08"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+
+    implementation 'androidx.compose.ui:ui:1.0.0'
+    implementation 'androidx.compose.material:material:1.0.0'
+    implementation 'androidx.compose.ui:ui-tooling:1.0.0'
+    implementation 'androidx.compose.runtime:runtime:1.0.0'
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07'
+    // Hilt
+    implementation "com.google.dagger:dagger:2.40.5"
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    kapt "com.google.dagger:dagger-compiler:2.40.5"
+    implementation "com.google.dagger:hilt-android:2.40.5"
+    kapt "com.google.dagger:hilt-android-compiler:2.40.5"
+    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    implementation 'androidx.datastore:datastore-preferences:1.0.0'
+    implementation 'androidx.datastore:datastore-preferences-core:1.0.0'
+    implementation 'androidx.datastore:datastore:1.0.0'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
+    implementation 'androidx.camera:camera-view:1.0.0-alpha28'
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+    implementation "com.google.accompanist:accompanist-permissions:0.18.0"
+    implementation 'io.coil-kt:coil-compose:1.4.0'
+    implementation 'com.google.accompanist:accompanist-coil:0.13.0'
+    implementation "androidx.compose.runtime:runtime-livedata:1.1.0-alpha07"
+
+    implementation 'com.yogeshpaliyal:speld:1.0.0'
+
+    implementation "com.google.android.exoplayer:exoplayer:2.15.0"
+}

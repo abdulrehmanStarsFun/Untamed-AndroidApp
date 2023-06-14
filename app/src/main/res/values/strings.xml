@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Uhunt</string>
+    <string name="title_activity_jetpack_log">JetpackLog</string>
+    <string name="title_activity_signup_page">signup_page</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_activity_faltu">faltu</string>
+
+    <string name="title_activity_tiktok">TikTok</string>
+    <string name="cd_back">Back</string>
+    <string name="title_activity_menu2">menu2</string>
+    <string name="title_activity_menu3">menu3</string>
+
+    <string name="title_activity_massenger">massenger</string>
+    <string name="title_activity_jetloginscreen">jetloginscreen</string>
+    <string name="title_activity_loginwithjetpack">loginwithjetpack</string>
+    <string name="title_activity_bot">bot</string>
+    <string name="title_activity_createscrean">createscrean</string>
+    <string name="title_activity_user_profile">user_profile</string>
+    <string name="title_activity_text_comp">text_comp</string>
+    <string name="title_activity_button_comp">Uhunt</string>
+    <string name="title_activity_editext_comp">editext_comp</string>
+    <string name="title_activity_videoprofilescreen">VideoProfileScreen</string>
+    <string name="title_activity_testing_screen">Testing_Screen</string>
+    <string name="title_activity_screen_test">ScreenTest</string>
+    <string name="title_activity_pro">pro</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_chat_elements">Chat_elements</string>
+    <string name="title_activity_uploadvideo_detail">Uploadvideo_detail</string>
+    <string name="title_activity_setting_screen">Setting_Screen</string>
+
+
+</resources>
